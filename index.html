@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="styles/style.css">
+	<title>MemoryGame</title>
+</head>
+<body>
+	 <header class="WelcomeToGame">
+	 		<h1>Добро пожаловать в игру</h1>
+	 </header>
+	 <section class="SettingsAndRules" id="settings-window" style="display:block">
+	 		<div class="Rules">
+	 			<h2>Об игре:</h2>
+                    <p>
+                        «Мемори», которую мы знаем, появилась на свет в феврале 1959 года под предводительством компании Ravensburger, славящейся по всему миру своими пазлами и, отчасти, играми для детей. 
+                    </p>
+                    <h2>Правила:</h2>
+                    <p>
+                        <ul>
+                            <li>Выберите две карточки</li>
+                            <li>Если карточки разные компьютер перевернет их обратно</li>
+                            <li>Если вам повезло, и карточки одинаковые, то можно приступать к поиску следующей пары</li>
+                            <li>Перевернули все карточки? Поздравляем! Вы выиграли</li>
+                            <li>Недовольны результатом? Попробуйте еще! Удачи :)</li>
+                        </ul>
+                    </p>
+	 		</div>
+	 		<div class="Settings">
+	 			<h2>Уровни</h2>
+	 			<form class="Levels">
+            <select id="level">
+            <option value="2x5">Легкий</option>
+            <option value="3x6" selected="selected">Средний</option>
+            <option value="3x8">Тяжелый</option>
+            </select>
+	 			</form>
+	 		</div>
+	 </section>
+	 <section id="Container" style="display:none"></section>
+	 <footer>
+	 		<form class="StartGameAndChooseBackCards">
+	 			<div class="buttonsGame">
+		 			<input class="Game" type="button" value="Начать" id="start" >
+	 				<input class="BackCards" type="button" value="Рубашка" id="backcards">
+	 				<input class="Back" type="button" value="Вернуться" id="back" style="display:none">
+	 			</div>
+	 		</form>
+	 		<div class="Cards" id = "CardsShift">
+	 			<ul id="ChoosingBackCards">
+          <li id="firstshirt"><a href="#first"><img src="images/back/back-1.jpg" alt="_blank"></a></li>
+          <li id="secondshirt"><a href="#second"><img src="images/back/back-2.jpg" alt="_blank"></a></li>
+          <li id="thirdshirt"><a href="#third"><img src="images/back/back-3.jpg" alt="_blank"></a></li>
+        </ul>
+	 		</div>
+	 </footer>
+     <script src="js/Change.js" type="text/javascript"></script>
+	 <script src="js/Game.js" type="text/javascript"></script>
+</body>
+</html>

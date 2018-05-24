@@ -1,0 +1,238 @@
+html {
+	height: 100%;
+	width:100%;
+    background: url(../images/bg.jpg);
+}
+body {
+	margin : auto 0;
+	height: 100%;
+	width:100%;
+	padding:0;
+}
+@font-face { 
+    font-family: Titan-One; 
+    src: url('../font/TitanOne-Regular.ttf'); 
+} 
+
+@font-face { 
+    font-family: Signika-Light; 
+    src: ('../font/Signika-Light.ttf'); 
+} 
+@font-face {
+    font-family: Montserrat Regular;
+    src: url(../font/montserrat.regular.ttf);	
+}
+.WelcomeToGame{
+	margin:auto 0;
+	width:100%;
+	height:15%;
+	text-align: center;
+}
+.WelcomeToGame h1{
+	margin:auto 0;
+	padding-top:2%;
+	font-family: Signika-Light;
+    color: #9999ff;
+    text-shadow: 0 -1px #FFF, 1px 0 #FFF, 0 1px #FFF, -1px 0 #FFF;
+    font-size: 50px;
+}
+.SettingsAndRules{
+	font-family: Montserrat Regular;
+	margin: auto 0;
+	height:50%;
+	width:100%;
+	padding:0;
+}
+.Rules{
+	width:50%;
+	height:100%;
+	float:left;
+}
+.Rules p{
+	margin-left: 30px;
+	font-size: 14px;
+}
+
+.Rules > ul > li {
+    font-size: 15px;
+}
+
+.Settings{
+	width:50%;
+	height:100%;
+	display:inline-block;
+}
+h2{
+    font-size: 40px;
+	margin : auto 0;
+	padding-top:2%;
+	font-family: Signika-Light;
+    color: #9999ff;
+    text-shadow: 0 -1px #FFF, 1px 0 #FFF, 0 1px #FFF, -1px 0 #FFF;
+}
+.Settings h2{
+	text-align: center;
+}
+.Rules h2{
+	text-align: left;
+	margin-left: 30px;
+}
+.Levels{
+	text-align:center;
+	width:50%;
+	color:#9999ff;
+}
+.Levels select{
+	margin-left:50%;
+	margin-top:5%;
+	width: 100%;
+  	font-size: 25px;
+  	background: transparent;
+  	border-color: #9999ff;
+  	height: 100px;
+  	text-align: center;
+    font-family: Signika-Light;
+    color: #9999ff;
+    background-color: rgba(0, 0, 255, 0.3);
+    text-shadow: 0 -1px #FFF, 1px 0 #FFF, 0 1px #FFF, -1px 0 #FFF;
+}
+footer{
+	width:100%;
+	margin:auto 0;
+}
+.StartGameAndChooseBackCards{
+	display:inline-block;
+	width:50%;
+    margin: auto;
+}
+.InputData:hover {
+    transition: 2s;
+	background-color: rgba(0, 0, 255, 0.3);
+}
+.InputData:not(:hover) {
+    transition: 2s;
+}
+.buttonsGame input:hover{
+	transition: 2s;
+	background-color: rgba(150, 255, 255, 0.3);
+}
+.buttonsGame input:not(:hover){
+	transition: 2s;
+}
+.Game,.BackCards{
+	margin-top:2.5%;
+	margin: 10px;
+	width: 40%;
+	float:left;
+  	font-size: 20px;
+  	background: transparent;
+    background-color: rgba(0, 0, 255, 0.3);
+	border-color: #9999ff;
+    font-family: Signika-Light;
+    color: #9999ff;
+    height: 170px;
+    text-shadow: 0 -1px #FFF, 1px 0 #FFF, 0 0px #FFF, 0px 0 #FFF;
+  	text-align: center;
+}
+.Back{
+    margin-top:7%;
+    margin-left: 10px;
+	width: 40%;
+	float:left;
+  	font-size: 20px;
+  	background: transparent;
+    background-color: rgba(0, 0, 255, 0.3);
+	border-color: #9999ff;
+    font-family: Signika-Light;
+    color: #9999ff;
+    text-shadow: 0 -1px #FFF, 1px 0 #FFF, 0 0px #FFF, 0px 0 #FFF;
+  	height: 100px;
+  	text-align: center;
+}
+
+.Cards{
+	width:50%;
+	height:100%;
+	float:right;
+	margin:auto 0;
+	padding:0;
+	display:none;
+}
+.Cards ul{
+	margin:auto 0;
+	padding:0;
+	height:100%;
+	width:100%;
+}
+.Cards ul li{
+	display:inline-block;
+	height:100%;
+	width:25%;
+	padding: 0px 0px 20px 0px;
+    margin-top: 40px;
+    margin-left: 20px;
+}
+.Cards ul li a img{
+    display: inline-block;
+    color: #fff;
+    text-decoration: none;
+    height: 70%;
+    width: 70%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#Container{
+  	width: 100%;
+  	height: 60%;
+  	margin: auto 0;
+}
+.GridCards{
+	padding-top:80px;
+	padding-right:50px; 
+	padding-left:320px;
+	display:flex;
+	flex-wrap:wrap;
+	justify-content: space-evenly;
+}
+.pictureCard{
+	margin:10px;
+	position: relative;
+    transition: all .4s linear;
+    transform-style: preserve-3d;
+	background-color: #6589F9;
+}
+.pictureCard, .back, .front {
+  height: 100px;
+  width: 100px;
+}
+.back, .front {
+  position: absolute;
+  backface-visibility: hidden;
+}
+.front{
+	z-index: 2;
+}
+.front-3,
+.front-2,
+.front-1{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.front-1{background-image: url('../images/back/back-1.jpg');}
+.front-2{background-image: url('../images/back/back-2.jpg');}
+.front-3{background-image: url('../images/back/back-3.jpg');}
+
+.back{
+	transform: rotateY(180deg);
+  	background-color: #6589F9;
+  	background-size: cover;
+  	background-repeat: no-repeat;
+  	background-position: center center;
+}
+.selected {
+    transform: rotateY(180deg);
+}
+.match{
+    opacity:0;
+}
